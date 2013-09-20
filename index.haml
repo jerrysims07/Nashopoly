@@ -7,11 +7,14 @@
     %link{rel:'stylesheet', href:"css/style.css"}
   %body
     #container
+      / Header Begin
       %header
         #imgwrap
           %img{src:'images/nash-skyline-white.png'}
         #h1wrap
           %h1 nashopoly
+      / Header End
+
       %nav
         %ul
           %li.indexLink
@@ -31,6 +34,8 @@
           %li.nashvilleLink
             %a{href:'http://www.nashville.com/'} nashville
       %section#content
+        #youtube
+          %iframe{width:'853', height:'480', src:'http://www.youtube.com/embed/fLUggyHk3eI?rel=0', frameborder:'0', allowfullscreen:true}
       %footer
         %ul
           %li
@@ -46,6 +51,7 @@
           %li
             %a{href:'html/contact.html'} contact us
           %li
-            %a{href:'http://www.hasbro.com/monopoly'} hasboro
+            %a{href:'http://www.hasbro.com/monopoly', target:'_blank'} hasboro
           %li
-            %a{href:'http://www.nashville.com/'} nashville
+            %a{href:'http://www.nashville.com/', target:'_blank'} nashville
+        %p (c) 2013 JPA .Developers

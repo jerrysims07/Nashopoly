@@ -1,5 +1,6 @@
 footer
 {
+  margin-top: 50px;
   ul
   {
     list-style: none;
@@ -23,5 +24,10 @@ footer
         }
       }
     }
+  }
+  p
+  {
+    @include fontFN($font, #ffffff, 8px);
+    text-align: right;
   }
 }
