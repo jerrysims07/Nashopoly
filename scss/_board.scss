@@ -1,0 +1,38 @@
+// define variablesc
+$boardSize: 1000px;
+$propWidth: $boardSize * .08;
+$propHeight: $boardSize * .14;
+
+//Draw a square
+@mixin drawSquare($size, $border)
+{
+  width:$size;
+  height:$size;
+  border:$border;
+  border-image-repeat:none;
+}
+
+//draw the main board
+#board
+{
+  @include drawSquare($boardSize, 2px solid black);
+  margin:auto;
+/*
+  table
+  {
+    width:$boardSize;
+    height:$boardSize;
+  }
+ */
+
+  .cornerProp
+  {
+    @include drawSquare($propHeight, 1px solid black);
+    // height:$propHeight;
+    // width:$propHeight;
+    float:left
+  }
+
+}
+
+//draw a corner square
