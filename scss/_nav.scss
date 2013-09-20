@@ -1,0 +1,63 @@
+nav
+{
+  position: relative;
+  top: -150px;
+  ul
+  {
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 0px;
+    li
+    {
+      display: inline-block;
+      width: 145px;
+      margin: 0px 0px 0px 0px;
+      padding: 15px 0px 15px 0px;
+      a
+      {
+        text-decoration: none;
+        @include fontFN($font, #ffffff, 20px);
+        font-weight: 400;
+        &:hover
+        {
+          color: $bgColor;
+          transition: all 0.4s ease-in-out;
+        }
+      }
+    }
+  }
+}
+
+.indexLink
+{
+  background: $propertyRed;
+}
+.boardLink
+{
+  background: $propertyOrange;
+}
+.piecesLink
+{
+  background: $propertyBlue;
+}
+.cardsLink
+{
+  background: $propertyTeal;
+}
+.faqLink
+{
+  background: $propertyLightGreen;
+}
+.contactLink
+{
+  background: $propertyGreen;
+}
+.hasboroLink
+{
+  background: $propertyPurple;
+}
+.nashvilleLink
+{
+  background: $propertyYellow;
+}
