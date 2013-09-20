@@ -25,4 +25,9 @@ footer
       }
     }
   }
+  p
+  {
+    @include fontFN($font, #ffffff, 8px);
+    text-align: right;
+  }
 }
