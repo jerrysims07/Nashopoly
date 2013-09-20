@@ -65,24 +65,31 @@ header {
     margin-top: 0px;
     top: -110px; }
 
-footer ul {
-  list-style: none;
-  text-align: center;
-  margin-top: 0px;
-  padding-left: 0px; }
-  footer ul li {
-    display: inline-block;
-    width: 145px;
-    margin: 0px 0px 0px 0px;
-    padding: 15px 0px 15px 0px; }
-    footer ul li a {
-      text-decoration: none;
-      font-family: "Source Sans Pro", sans-serif;
-      color: white;
-      font-size: 20px;
-      font-weight: 400; }
-      footer ul li a:hover {
-        text-decoration: underline; }
+footer {
+  margin-top: 50px; }
+  footer ul {
+    list-style: none;
+    text-align: center;
+    margin-top: 0px;
+    padding-left: 0px; }
+    footer ul li {
+      display: inline-block;
+      width: 145px;
+      margin: 0px 0px 0px 0px;
+      padding: 15px 0px 15px 0px; }
+      footer ul li a {
+        text-decoration: none;
+        font-family: "Source Sans Pro", sans-serif;
+        color: white;
+        font-size: 20px;
+        font-weight: 400; }
+        footer ul li a:hover {
+          text-decoration: underline; }
+  footer p {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-size: 8px;
+    text-align: right; }
 
 #board {
   width: 1000px;
@@ -145,3 +152,11 @@ body {
 
 .clear {
   clear: both; }
+
+#youtube {
+  width: 853px;
+  height: 480px;
+  margin: auto;
+  margin-top: 10px;
+  position: relative;
+  top: -100px; }
