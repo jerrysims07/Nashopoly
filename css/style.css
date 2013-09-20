@@ -111,13 +111,37 @@ footer {
   #board .rotateRight {
     -webkit-transform: rotate(90deg); }
   #board .rotateLeft {
-    -webkit-transform: rotate(270deg); }
+    -webkit-transform: rotate(270deg);
+    position: relative;
+    top: -30px;
+    left: 30px; }
   #board .upsideDown {
     -webkit-transform: rotate(180deg); }
-  #board #row1 {
+  #board .horizontalRow {
     width: 1000px;
     height: 140px;
     float: left; }
+    #board .horizontalRow div {
+      float: left; }
+  #board .column {
+    width: 720px;
+    height: 140px; }
+  #board #leftCol {
+    float: left;
+    -webkit-transform: rotate(270deg);
+    position: relative;
+    right: 290px;
+    top: 288px; }
+  #board #rightCol {
+    -webkit-transform: rotate(90deg);
+    float: right;
+    position: relative;
+    right: -290px;
+    top: 150px; }
+  #board .flipped {
+    -webkit-transform: rotate(180deg);
+    position: relative;
+    top: 436px; }
 
 body {
   background-color: #333333; }
@@ -125,6 +149,9 @@ body {
 #container {
   width: 1200px;
   margin: auto; }
+
+.clear {
+  clear: both; }
 
 #youtube {
   width: 853px;
