@@ -1,0 +1,20 @@
+header
+{
+  margin: auto;
+  #imgwrap
+  {
+    width: 750px;
+    margin:auto;
+    img
+    {
+      width: 750px;
+      margin: auto;
+      margin-top: 25px;
+    }
+  }
+  h1
+  {
+    @include fontFN($font, #ffffff, 100px);
+    font-weight: 200;
+  }
+}

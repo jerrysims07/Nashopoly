@@ -1,6 +1,22 @@
 @import url(http://fonts.googleapis.com/css?family=Source+Sans+Pro:200,300,400,700,400italic);
+header {
+  margin: auto; }
+  header #imgwrap {
+    width: 750px;
+    margin: auto; }
+    header #imgwrap img {
+      width: 750px;
+      margin: auto;
+      margin-top: 25px; }
+  header h1 {
+    font-family: "Source Sans Pro", sans-serif;
+    color: white;
+    font-size: 100px;
+    font-weight: 200; }
+
 body {
   background-color: #333333; }
 
 #container {
-  width: 1200px; }
+  width: 1200px;
+  margin: auto; }
