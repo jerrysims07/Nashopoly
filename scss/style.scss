@@ -27,3 +27,22 @@ margin-top: 10px;
 position: relative;
 top: -100px;
 }
+
+p
+{
+  @include fontFN($font, #ffffff, 16px);
+  font-weight: 200;
+}
+
+h2
+{
+  @include fontFN($font, #ffffff, 45px);
+  font-weight: 200;
+}
+
+.homep
+{
+  position: relative;
+  top: -50px;
+  text-align: center;
+}
