@@ -48,6 +48,9 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
   .rotateLeft
   {
     -webkit-transform:rotate(270deg);
+    position:relative;
+    top:-30px;
+    left:30px;
   }
 
   .upsideDown
@@ -55,12 +58,57 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
     -webkit-transform:rotate(180deg);
   }
 
-  #row1
+  .horizontalRow
   {
     width:$boardSize;
     height:$propHeight+($borderSize*2);
     float:left;
+    div
+    {
+      float:left;
+    }
   }
+
+
+
+  .column
+  {
+    width:($propWidth*9)+($borderSize*18);
+    height:$propHeight+($borderSize*2);
+    // float:left;
+    // position:relative;
+    // right:290px;
+    // top:288px;
+      }
+
+  #leftCol
+  {
+    // width:($propWidth*9)+($borderSize*18);
+    // height:$propHeight+($borderSize*2);
+    float:left;
+    -webkit-transform:rotate(270deg);
+    position:relative;
+    right:290px;
+    top:288px;
+  }
+
+  #rightCol
+  {
+    -webkit-transform:rotate(90deg);
+    float:right;
+    position:relative;
+    right:-290px;
+    top:150px;
+  }
+
+  .flipped
+  {
+    -webkit-transform:rotate(180deg);
+    position:relative;
+    top:436px;
+  }
+
+
 }
 
 
