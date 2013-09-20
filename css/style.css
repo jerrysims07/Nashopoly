@@ -91,6 +91,34 @@ footer {
     font-size: 8px;
     text-align: right; }
 
+#board {
+  width: 1000px;
+  height: 1000px;
+  border: 2px solid black;
+  border-image-repeat: none;
+  margin: auto; }
+  #board .cornerProp {
+    width: 138px;
+    height: 138px;
+    border: 1px solid black;
+    border-image-repeat: none;
+    float: left; }
+  #board .uprightProp {
+    width: 78px;
+    height: 138px;
+    border: 1px solid black;
+    float: left; }
+  #board .rotateRight {
+    -webkit-transform: rotate(90deg); }
+  #board .rotateLeft {
+    -webkit-transform: rotate(270deg); }
+  #board .upsideDown {
+    -webkit-transform: rotate(180deg); }
+  #board #row1 {
+    width: 1000px;
+    height: 140px;
+    float: left; }
+
 body {
   background-color: #333333; }
 
