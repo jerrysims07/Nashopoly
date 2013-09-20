@@ -12,7 +12,11 @@ header {
     font-family: "Source Sans Pro", sans-serif;
     color: white;
     font-size: 100px;
-    font-weight: 200; }
+    font-weight: 200;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: -110px; }
 
 body {
   background-color: #333333; }

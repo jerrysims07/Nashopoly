@@ -16,5 +16,9 @@ header
   {
     @include fontFN($font, #ffffff, 100px);
     font-weight: 200;
+    text-align: center;
+    position: relative;
+    margin-top: 0px;
+    top: -110px;
   }
 }
