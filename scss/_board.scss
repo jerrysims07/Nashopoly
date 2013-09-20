@@ -1,0 +1,68 @@
+// define variablesc
+$boardSize: 1000px;
+$borderSize:1px;
+$propWidth: ($boardSize * .08)-($borderSize*2);
+$propHeight: ($boardSize * .14) - ($borderSize*2);
+
+//Draw a square
+@mixin drawSquare($size, $border)
+{
+  width:$size;
+  height:$size;
+  border:$border;
+  border-image-repeat:none;
+}
+
+@mixin drawRect($top, $side, $border:none)
+{
+  width:$top;
+  height:$side;
+  border:$border;
+}
+
+//draw the main board
+#board
+{
+  @include drawSquare($boardSize, 2px solid black);
+  margin:auto;
+
+  .cornerProp
+  {
+    @include drawSquare($propHeight, $borderSize solid black);
+    // height:$propHeight;
+    // width:$propHeight;
+    float:left
+  }
+
+  .uprightProp
+  {
+    @include drawRect($propWidth, $propHeight, $borderSize solid black);
+    float:left;
+  }
+
+  .rotateRight
+  {
+    -webkit-transform:rotate(90deg);
+  }
+
+  .rotateLeft
+  {
+    -webkit-transform:rotate(270deg);
+  }
+
+  .upsideDown
+  {
+    -webkit-transform:rotate(180deg);
+  }
+
+  #row1
+  {
+    width:$boardSize;
+    height:$propHeight+($borderSize*2);
+    float:left;
+  }
+}
+
+
+
+//draw a corner square
