@@ -7,3 +7,12 @@
 @import 'board';
 @import 'pieces';
 
+body
+{
+  background-color:$bgColor;
+}
+
+#container
+{
+  width:1200px;
+}
