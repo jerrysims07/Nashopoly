@@ -92,22 +92,44 @@ footer {
     text-align: right; }
 
 #board {
-  width: 1000px;
-  height: 1000px;
+  width: 500px;
+  height: 500px;
   border: 2px solid black;
   border-image-repeat: none;
   margin: auto; }
   #board .cornerProp {
-    width: 138px;
-    height: 138px;
+    width: 68px;
+    height: 68px;
     border: 1px solid black;
     border-image-repeat: none;
     float: left; }
   #board .uprightProp {
-    width: 78px;
-    height: 138px;
+    width: 38px;
+    height: 68px;
     border: 1px solid black;
+    border-bottom: 2px solid black;
     float: left; }
+    #board .uprightProp .regularProperties {
+      width: 37px;
+      height: 13.6px;
+      border: 1px solid black;
+      border-bottom: 2px solid black; }
+    #board .uprightProp .purple {
+      background-color: #7655a3; }
+    #board .uprightProp .teal {
+      background-color: #39c1cb; }
+    #board .uprightProp .orange {
+      background-color: #faaa19; }
+    #board .uprightProp .red {
+      background-color: #f15824; }
+    #board .uprightProp .yellow {
+      background-color: #f6ea53; }
+    #board .uprightProp .lightGreen {
+      background-color: #a8d37e; }
+    #board .uprightProp .green {
+      background-color: #12b362; }
+    #board .uprightProp .blue {
+      background-color: #087ab5; }
   #board .rotateRight {
     -webkit-transform: rotate(90deg); }
   #board .rotateLeft {
@@ -118,30 +140,30 @@ footer {
   #board .upsideDown {
     -webkit-transform: rotate(180deg); }
   #board .horizontalRow {
-    width: 1000px;
-    height: 140px;
+    width: 500px;
+    height: 70px;
     float: left; }
     #board .horizontalRow div {
       float: left; }
   #board .column {
-    width: 720px;
-    height: 140px; }
+    width: 360px;
+    height: 70px; }
   #board #leftCol {
     float: left;
     -webkit-transform: rotate(270deg);
     position: relative;
-    right: 290px;
-    top: 288px; }
+    right: 145px;
+    top: 145px; }
   #board #rightCol {
     -webkit-transform: rotate(90deg);
     float: right;
     position: relative;
-    right: -290px;
-    top: 150px; }
+    right: -145px;
+    top: 75px; }
   #board .flipped {
     -webkit-transform: rotate(180deg);
     position: relative;
-    top: 436px; }
+    top: 220px; }
 
 body {
   background-color: #333333; }
