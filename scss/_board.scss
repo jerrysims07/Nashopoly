@@ -1,10 +1,19 @@
 // define variablesc
-$boardSize: 1000px;
+$boardSize: 500px;
 $borderSize:1px;
 $propWidth: ($boardSize * .08)-($borderSize*2);
 $propHeight: ($boardSize * .14) - ($borderSize*2);
+$propBannerHeight:($propHeight)*.2;
+$leftColRightMove:($boardSize)*.290;
+$leftColTopMove:($boardSize)*.290;
+$rightColRightMove:($boardSize)*-.290;
+$rightColTopMove:($boardSize)*.150;
+$flippedTopMove:($boardSize)*.440;
 
-//Draw a square
+
+
+//This mixin will draw a square. You send the size of all sides and
+// the kind of border that you would like.
 @mixin drawSquare($size, $border)
 {
   width:$size;
@@ -13,6 +22,8 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
   border-image-repeat:none;
 }
 
+// This mixin will draw a rectangle. You send the size of the sides
+// and the top/bottom and the type of border you would like.
 @mixin drawRect($top, $side, $border:none)
 {
   width:$top;
@@ -26,18 +37,66 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
   @include drawSquare($boardSize, 2px solid black);
   margin:auto;
 
+
+
   .cornerProp
   {
     @include drawSquare($propHeight, $borderSize solid black);
-    // height:$propHeight;
-    // width:$propHeight;
     float:left
   }
 
   .uprightProp
   {
     @include drawRect($propWidth, $propHeight, $borderSize solid black);
+    border-bottom:2px solid black;
     float:left;
+
+    .regularProperties
+    {
+      @include drawRect($propWidth - 1, $propBannerHeight, 1px solid black);
+      border-bottom:2px solid black;
+    }
+
+    .purple
+    {
+      background-color:$propertyPurple;
+    }
+
+    .teal
+    {
+      background-color:$propertyTeal;
+    }
+
+    .orange
+    {
+      background-color:$propertyOrange;
+    }
+
+   .red
+    {
+      background-color:$propertyRed;
+    }
+
+   .yellow
+    {
+      background-color:$propertyYellow;
+    }
+
+   .lightGreen
+    {
+      background-color:$propertyLightGreen;
+    }
+
+   .green
+    {
+      background-color:$propertyGreen;
+    }
+
+   .blue
+    {
+      background-color:$propertyBlue;
+    }
+
   }
 
   .rotateRight
@@ -75,21 +134,15 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
   {
     width:($propWidth*9)+($borderSize*18);
     height:$propHeight+($borderSize*2);
-    // float:left;
-    // position:relative;
-    // right:290px;
-    // top:288px;
-      }
+  }
 
   #leftCol
   {
-    // width:($propWidth*9)+($borderSize*18);
-    // height:$propHeight+($borderSize*2);
     float:left;
     -webkit-transform:rotate(270deg);
     position:relative;
-    right:290px;
-    top:288px;
+    right:$leftColRightMove;
+    top:$leftColTopMove;
   }
 
   #rightCol
@@ -97,15 +150,15 @@ $propHeight: ($boardSize * .14) - ($borderSize*2);
     -webkit-transform:rotate(90deg);
     float:right;
     position:relative;
-    right:-290px;
-    top:150px;
+    right:$rightColRightMove;
+    top:$rightColTopMove;
   }
 
   .flipped
   {
     -webkit-transform:rotate(180deg);
     position:relative;
-    top:436px;
+    top:$flippedTopMove;
   }
 
 
