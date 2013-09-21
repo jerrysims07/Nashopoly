@@ -1,9 +1,11 @@
 // define variablesc
-$boardSize: 500px;
-$borderSize:1px;
+$boardSize: 1000px;
+// $borderSize:1px;
+$borderSize:$boardSize*.001;
 $propWidth: ($boardSize * .08)-($borderSize*2);
 $propHeight: ($boardSize * .14) - ($borderSize*2);
 $propBannerHeight:($propHeight)*.2;
+$pictureSize:$propHeight * .4;
 $leftColRightMove:($boardSize)*.290;
 $leftColTopMove:($boardSize)*.290;
 $rightColRightMove:($boardSize)*-.290;
@@ -36,7 +38,7 @@ $flippedTopMove:($boardSize)*.440;
 {
   @include drawSquare($boardSize, 2px solid black);
   margin:auto;
-
+  background-color:$boardSpace;
 
 
   .cornerProp
@@ -51,53 +53,66 @@ $flippedTopMove:($boardSize)*.440;
     border-bottom:2px solid black;
     float:left;
 
+    // attributes shared by all regular purchaseable/mortgageable properties.
     .regularProperties
     {
       @include drawRect($propWidth - 1, $propBannerHeight, 1px solid black);
       border-bottom:2px solid black;
     }
 
-    .purple
-    {
-      background-color:$propertyPurple;
-    }
-
-    .teal
-    {
-      background-color:$propertyTeal;
-    }
-
-    .orange
-    {
-      background-color:$propertyOrange;
-    }
-
-   .red
-    {
-      background-color:$propertyRed;
-    }
-
-   .yellow
-    {
-      background-color:$propertyYellow;
-    }
-
-   .lightGreen
-    {
-      background-color:$propertyLightGreen;
-    }
-
-   .green
-    {
-      background-color:$propertyGreen;
-    }
-
-   .blue
-    {
-      background-color:$propertyBlue;
-    }
-
+    // set all colors for the banners on regular properties
+    .purple{background-color:$propertyPurple;}
+    .teal{background-color:$propertyTeal;}
+    .orange{background-color:$propertyOrange;}
+    .red{background-color:$propertyRed;}
+    .yellow{background-color:$propertyYellow;}
+    .lightGreen{background-color:$propertyLightGreen;}
+    .green{background-color:$propertyGreen;}
+    .blue{background-color:$propertyBlue;}
   }
+
+  .propPic
+  {
+    @include drawSquare($pictureSize, none);
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    left:$nudge;
+    top:$nudge;
+    repeat:no-repeat;
+    background-size:cover;
+  }
+
+  .caption
+  {
+    color:$bgColor;
+    font-size:$propHeight * .05;
+    width:$propWidth;
+    height:$propHeight * .1;
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    // left:$nudge;
+    top:$nudge;
+    font-family:$font;
+    margin-top:$nudge*.6;
+    text-align:center;
+  }
+
+  .price
+  {
+    width:$propWidth;
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    margin:auto;
+    text-align:center;
+
+    // left:$nudge;
+    top:$nudge;
+  }
+
+  // set the images for properties.
+  #carter{background-image:url('../images/carter.png');}
+  #chicks{background-image:url('../images/chicks.png');}
+
 
   .rotateRight
   {

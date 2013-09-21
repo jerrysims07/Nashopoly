@@ -92,26 +92,27 @@ footer {
     text-align: right; }
 
 #board {
-  width: 500px;
-  height: 500px;
+  width: 1000px;
+  height: 1000px;
   border: 2px solid black;
   border-image-repeat: none;
-  margin: auto; }
+  margin: auto;
+  background-color: #f5f6f7; }
   #board .cornerProp {
-    width: 68px;
-    height: 68px;
+    width: 138px;
+    height: 138px;
     border: 1px solid black;
     border-image-repeat: none;
     float: left; }
   #board .uprightProp {
-    width: 38px;
-    height: 68px;
+    width: 78px;
+    height: 138px;
     border: 1px solid black;
     border-bottom: 2px solid black;
     float: left; }
     #board .uprightProp .regularProperties {
-      width: 37px;
-      height: 13.6px;
+      width: 77px;
+      height: 27.6px;
       border: 1px solid black;
       border-bottom: 2px solid black; }
     #board .uprightProp .purple {
@@ -130,6 +131,36 @@ footer {
       background-color: #12b362; }
     #board .uprightProp .blue {
       background-color: #087ab5; }
+  #board .propPic {
+    width: 55.2px;
+    height: 55.2px;
+    border: none;
+    border-image-repeat: none;
+    position: relative;
+    left: 11.4px;
+    top: 11.4px;
+    repeat: no-repeat;
+    background-size: cover; }
+  #board .caption {
+    color: #333333;
+    font-size: 6.9px;
+    width: 78px;
+    height: 13.8px;
+    position: relative;
+    top: 11.4px;
+    font-family: "Source Sans Pro", sans-serif;
+    margin-top: 6.84px;
+    text-align: center; }
+  #board .price {
+    width: 78px;
+    position: relative;
+    margin: auto;
+    text-align: center;
+    top: 11.4px; }
+  #board #carter {
+    background-image: url("../images/carter.png"); }
+  #board #chicks {
+    background-image: url("../images/chicks.png"); }
   #board .rotateRight {
     -webkit-transform: rotate(90deg); }
   #board .rotateLeft {
@@ -140,30 +171,30 @@ footer {
   #board .upsideDown {
     -webkit-transform: rotate(180deg); }
   #board .horizontalRow {
-    width: 500px;
-    height: 70px;
+    width: 1000px;
+    height: 140px;
     float: left; }
     #board .horizontalRow div {
       float: left; }
   #board .column {
-    width: 360px;
-    height: 70px; }
+    width: 720px;
+    height: 140px; }
   #board #leftCol {
     float: left;
     -webkit-transform: rotate(270deg);
     position: relative;
-    right: 145px;
-    top: 145px; }
+    right: 290px;
+    top: 290px; }
   #board #rightCol {
     -webkit-transform: rotate(90deg);
     float: right;
     position: relative;
-    right: -145px;
-    top: 75px; }
+    right: -290px;
+    top: 150px; }
   #board .flipped {
     -webkit-transform: rotate(180deg);
     position: relative;
-    top: 220px; }
+    top: 440px; }
 
 body {
   background-color: #333333; }
