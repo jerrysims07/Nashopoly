@@ -14,7 +14,7 @@
         #h1wrap
           %h1 nashopoly
       / Header End
-
+      / navigation begin
       %nav
         %ul
           %li.indexLink
@@ -30,12 +30,15 @@
           %li.contactLink
             %a{href:'html/contact.html'} contact us
           %li.hasboroLink
-            %a{href:'http://www.hasbro.com/monopoly'} hasboro
+            %a{href:'http://www.hasbro.com/monopoly', target:'_blank'} hasbro
           %li.nashvilleLink
-            %a{href:'http://www.nashville.com/'} nashville
+            %a{href:'http://www.nashville.com/', target:'_blank'} nashville
+      / navigation end
       %section#content
         #youtube
           %iframe{width:'853', height:'480', src:'http://www.youtube.com/embed/fLUggyHk3eI?rel=0', frameborder:'0', allowfullscreen:true}
+        %h2.homep Welcome to Nashopoly.
+        %p.homep This site and game are a way for Amanda Thurman, Jerry Sims, and Pete Dunlap <br/> to practice web development skills as part of the Nashville Software School.
       %footer
         %ul
           %li
@@ -51,7 +54,7 @@
           %li
             %a{href:'html/contact.html'} contact us
           %li
-            %a{href:'http://www.hasbro.com/monopoly', target:'_blank'} hasboro
+            %a{href:'http://www.hasbro.com/monopoly', target:'_blank'} hasbro
           %li
             %a{href:'http://www.nashville.com/', target:'_blank'} nashville
         %p (c) 2013 JPA .Developers

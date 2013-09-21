@@ -196,6 +196,67 @@ footer {
     position: relative;
     top: 440px; }
 
+#piecewrap {
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: -110px; }
+  #piecewrap #sidenav {
+    margin-top: 20px;
+    float: left;
+    width: 350px;
+    background: #f5f6f7;
+    border-radius: 15px; }
+    #piecewrap #sidenav ul {
+      list-style: none;
+      padding: 25px 25px 25px 25px;
+      margin: auto;
+      text-align: center; }
+      #piecewrap #sidenav ul li {
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px; }
+        #piecewrap #sidenav ul li a {
+          text-decoration: none;
+          text-align: center;
+          font-family: "Source Sans Pro", sans-serif;
+          color: white;
+          font-size: 45px;
+          font-weight: 200;
+          padding: 5px;
+          border-radius: 15px; }
+        #piecewrap #sidenav ul li:hover {
+          background: rgba(95, 95, 95, 0.4);
+          width: 350px;
+          -webkit-transition: width 0.3s linear, background 0.4s ease;
+          transition: width 0.3s linear, background 0.4s ease; }
+      #piecewrap #sidenav ul .lastpiece {
+        margin-bottom: 0px; }
+      #piecewrap #sidenav ul .individualpage {
+        background: rgba(95, 95, 95, 0.4);
+        width: 350px; }
+  #piecewrap #piecedesc {
+    margin-top: 100px;
+    float: left;
+    width: 750px;
+    margin-left: 60px; }
+    #piecewrap #piecedesc img {
+      width: 150px;
+      float: left;
+      display: inline-block; }
+    #piecewrap #piecedesc p {
+      width: 550px;
+      display: inline-block;
+      float: left;
+      font-size: 30px;
+      margin: 0 25px 0 25px; }
+
+.piecetitle {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 35px;
+  padding: 0px; }
+
 body {
   background-color: #333333; }
 
@@ -213,3 +274,20 @@ body {
   margin-top: 10px;
   position: relative;
   top: -100px; }
+
+p {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 16px;
+  font-weight: 200; }
+
+h2 {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 45px;
+  font-weight: 200; }
+
+.homep {
+  position: relative;
+  top: -50px;
+  text-align: center; }

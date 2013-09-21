@@ -1,0 +1,82 @@
+#piecewrap
+{
+  width: 1200px;
+  margin: 0 auto;
+  position: relative;
+  top: -110px;
+  #sidenav
+  {
+    margin-top: 20px;
+    float: left;
+    width: 350px;
+    background: $boardSpace;
+    border-radius: 15px;
+    ul
+    {
+      list-style: none;
+      padding: 25px 25px 25px 25px;
+      margin: auto;
+      text-align: center;
+      li
+      {
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px;
+        a
+        {
+          text-decoration: none;
+          text-align: center;
+          @include fontFN($font, #ffffff, 45px);
+          font-weight: 200;
+          padding: 5px;
+          border-radius: 15px;
+        }
+        &:hover
+        {
+          background: rgba(95, 95, 95, 0.4);
+          width: 350px;
+          -webkit-transition: width 0.3s linear, background 0.4s ease;
+          transition: width 0.3s linear, background 0.4s ease;
+        }
+      }
+      .lastpiece
+      {
+        margin-bottom: 0px;
+      }
+      .individualpage
+      {
+        background: rgba(95, 95, 95, 0.4);
+        width: 350px;
+      }
+    }
+  }
+  #piecedesc
+  {
+    margin-top: 100px;
+    float: left;
+    width: 750px;
+    margin-left: 60px;
+    img
+    {
+      width: 150px;
+      float: left;
+      display: inline-block;
+    }
+    p
+    {
+      width: 550px;
+      display: inline-block;
+      float: left;
+      font-size: 30px;
+      margin: 0 25px 0 25px;
+    }
+  }
+}
+
+.piecetitle
+{
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 35px;
+  padding: 0px;
+}
