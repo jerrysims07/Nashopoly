@@ -109,7 +109,8 @@ footer {
     height: 138px;
     border: 1px solid black;
     border-bottom: 2px solid black;
-    float: left; }
+    float: left;
+    -webkit-transform: rotate(180deg); }
     #board .uprightProp .regularProperties {
       width: 77px;
       height: 27.6px;
@@ -161,6 +162,48 @@ footer {
     background-image: url("../images/carter.png"); }
   #board #chicks {
     background-image: url("../images/chicks.png"); }
+  #board #brooks {
+    background-image: url("../images/brooks.png"); }
+  #board #mcentire {
+    background-image: url("../images/mcentire.png"); }
+  #board #jackson {
+    background-image: url("../images/jackson.png"); }
+  #board #strait {
+    background-image: url("../images/strait.png"); }
+  #board #alabama {
+    background-image: url("../images/alabama.png"); }
+  #board #judds {
+    background-image: url("../images/judd.png"); }
+  #board #chesney {
+    background-image: url("../images/chesney.png"); }
+  #board #mcgraw {
+    background-image: url("../images/mcgraw.png"); }
+  #board #shelton {
+    background-image: url("../images/shelton.png"); }
+  #board #swift {
+    background-image: url("../images/swift.png"); }
+  #board #bailey {
+    background-image: url("../images/bailey.png"); }
+  #board #acuff {
+    background-image: url("../images/acuff.png"); }
+  #board #bailey {
+    background-image: url("../images/bailey.png"); }
+  #board #monroe {
+    background-image: url("../images/monroe.png"); }
+  #board #williams {
+    background-image: url("../images/williams.png"); }
+  #board #cash {
+    background-image: url("../images/cash.png"); }
+  #board #jones {
+    background-image: url("../images/jones.png"); }
+  #board #cline {
+    background-image: url("../images/cline.png"); }
+  #board #parton {
+    background-image: url("../images/parton.png"); }
+  #board #pride {
+    background-image: url("../images/pride.png"); }
+  #board #jennings {
+    background-image: url("../images/jennings.png"); }
   #board .rotateRight {
     -webkit-transform: rotate(90deg); }
   #board .rotateLeft {

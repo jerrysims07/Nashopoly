@@ -52,6 +52,8 @@ $flippedTopMove:($boardSize)*.440;
     @include drawRect($propWidth, $propHeight, $borderSize solid black);
     border-bottom:2px solid black;
     float:left;
+    -webkit-transform:rotate(180deg);
+
 
     // attributes shared by all regular purchaseable/mortgageable properties.
     .regularProperties
@@ -112,6 +114,27 @@ $flippedTopMove:($boardSize)*.440;
   // set the images for properties.
   #carter{background-image:url('../images/carter.png');}
   #chicks{background-image:url('../images/chicks.png');}
+  #brooks{background-image:url('../images/brooks.png');}
+  #mcentire{background-image:url('../images/mcentire.png');}
+  #jackson{background-image:url('../images/jackson.png');}
+  #strait{background-image:url('../images/strait.png');}
+  #alabama{background-image:url('../images/alabama.png');}
+  #judds{background-image:url('../images/judd.png');}
+  #chesney{background-image:url('../images/chesney.png');}
+  #mcgraw{background-image:url('../images/mcgraw.png');}
+  #shelton{background-image:url('../images/shelton.png');}
+  #swift{background-image:url('../images/swift.png');}
+  #bailey{background-image:url('../images/bailey.png');}
+  #acuff{background-image:url('../images/acuff.png');}
+  #bailey{background-image:url('../images/bailey.png');}
+  #monroe{background-image:url('../images/monroe.png');}
+  #williams{background-image:url('../images/williams.png');}
+  #cash{background-image:url('../images/cash.png');}
+  #jones{background-image:url('../images/jones.png');}
+  #cline{background-image:url('../images/cline.png');}
+  #parton{background-image:url('../images/parton.png');}
+  #pride{background-image:url('../images/pride.png');}
+  #jennings{background-image:url('../images/jennings.png');}
 
 
   .rotateRight
