@@ -209,10 +209,8 @@ footer {
     float: left;
     width: 750px;
     margin-left: 60px; }
-    #piecewrap #piecedesc #imgp {
+    #piecewrap #piecedesc img {
       width: 150px;
-      height: 150px;
-      background: white;
       float: left;
       display: inline-block; }
     #piecewrap #piecedesc p {
