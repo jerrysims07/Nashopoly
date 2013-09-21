@@ -201,6 +201,9 @@ footer {
           transition: width 0.3s linear, background 0.4s ease; }
       #piecewrap #sidenav ul .lastpiece {
         margin-bottom: 0px; }
+      #piecewrap #sidenav ul .individualpage {
+        background: rgba(95, 95, 95, 0.4);
+        width: 350px; }
 
 .piecetitle {
   text-align: center;
