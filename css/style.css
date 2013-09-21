@@ -166,10 +166,10 @@ footer {
     top: 220px; }
 
 #piecewrap {
-  width: 1000px;
+  width: 1200px;
   margin: 0 auto;
   position: relative;
-  top: -80px; }
+  top: -110px; }
   #piecewrap #sidenav {
     margin-top: 20px;
     float: left;
@@ -179,26 +179,34 @@ footer {
     #piecewrap #sidenav ul {
       list-style: none;
       padding: 25px 25px 25px 25px;
-      margin: auto; }
+      margin: auto;
+      text-align: center; }
       #piecewrap #sidenav ul li {
-        text-align: center;
-        padding-bottom: 25px; }
+        margin-bottom: 25px;
+        width: 300px;
+        border-radius: 15px; }
         #piecewrap #sidenav ul li a {
           text-decoration: none;
+          text-align: center;
           font-family: "Source Sans Pro", sans-serif;
           color: white;
           font-size: 45px;
           font-weight: 200;
           padding: 5px;
-          background: #333333;
           border-radius: 15px; }
-          #piecewrap #sidenav ul li a:hover {
-            background: rgba(51, 51, 51, 0);
-            opacity: 0.4;
-            width: 350px;
-            transition: all 0.5s ease-in-out; }
+        #piecewrap #sidenav ul li:hover {
+          background: rgba(95, 95, 95, 0.4);
+          width: 350px;
+          -webkit-transition: width 0.3s linear, background 0.4s ease;
+          transition: width 0.3s linear, background 0.4s ease; }
       #piecewrap #sidenav ul .lastpiece {
-        padding-bottom: 0px; }
+        margin-bottom: 0px; }
+
+.piecetitle {
+  text-align: center;
+  margin: 0px;
+  margin-bottom: 35px;
+  padding: 0px; }
 
 body {
   background-color: #333333; }
