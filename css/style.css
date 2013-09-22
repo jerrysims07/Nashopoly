@@ -505,3 +505,25 @@ h2 {
   font-weight: 400;
   line-height: 24px;
   padding-top: 15px; }
+
+.faq {
+  width: 1000px;
+  margin: 0 auto;
+  position: relative;
+  top: -100px; }
+  .faq h2 {
+    text-align: center;
+    text-decoration: underline; }
+  .faq p {
+    margin-bottom: 100px; }
+  .faq .references {
+    margin-bottom: 0px;
+    margin-top: 150px;
+    text-align: right;
+    font-size: 12px; }
+
+dt {
+  font-family: "Source Sans Pro", sans-serif;
+  color: white;
+  font-size: 35px;
+  font-weight: 200; }
