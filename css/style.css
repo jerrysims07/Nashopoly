@@ -98,6 +98,22 @@ footer {
   border-image-repeat: none;
   margin: auto;
   background-color: #f5f6f7; }
+  #board #centerLogo {
+    height: 171.64133px;
+    width: 667px;
+    margin: auto;
+    repeat: none;
+    background-image: url("../images/nash-skyline-black.png");
+    background-size: cover;
+    position: relative;
+    top: 165px;
+    -webkit-transform: rotate(45deg); }
+    #board #centerLogo h1 {
+      font-family: "Source Sans Pro", sans-serif;
+      font-size: 88.93333px;
+      text-align: center;
+      position: relative;
+      top: -108px; }
   #board .cornerProp {
     width: 138px;
     height: 138px;

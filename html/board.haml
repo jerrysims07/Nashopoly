@@ -35,6 +35,12 @@
 
       %section#content
         #board
+          / insert the Chance logo and space
+
+
+          / insert the Community Chest logo and space
+
+          / Draw top row of board & populate
           .horizontalRow
             #topLeftProp.cornerProp
             .uprightProp
@@ -73,6 +79,8 @@
               .price $120
             #topRightProp.cornerProp
           .clear
+
+          / draw left column & populate
           .column#leftCol
             .uprightProp
               .regularProperties.lightGreen
@@ -108,6 +116,8 @@
               .clear
               .caption Taylor Swift
               .price $400
+
+          / draw right column & populate
           .column#rightCol
             .uprightProp
               .regularProperties.green
@@ -148,6 +158,13 @@
               .clear
               .caption Waylon Jennings
               .price $200
+
+          / insert the main logo into the center of the board
+          #centerLogo
+            %h1 nashopoly
+            / %img{src:'../images/nash-skyline-black.png'}
+
+          / draw bottom row & populate
           .horizontalRow.flipped
             #topLeftProp.cornerProp
             .uprightProp

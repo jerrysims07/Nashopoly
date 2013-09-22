@@ -10,7 +10,7 @@ $leftColRightMove:($boardSize)*.290;
 $leftColTopMove:($boardSize)*.290;
 $rightColRightMove:($boardSize)*-.290;
 $rightColTopMove:($boardSize)*.150;
-$flippedTopMove:($boardSize)*.440;
+$flippedTopMove:($boardSize)*.44;
 
 
 
@@ -40,6 +40,27 @@ $flippedTopMove:($boardSize)*.440;
   margin:auto;
   background-color:$boardSpace;
 
+  #centerLogo
+  {
+    height:($boardSize *.667)*(193/750);
+    width:$boardSize *.667;
+    margin:auto;
+    repeat:none;
+    background-image:url('../images/nash-skyline-black.png');
+    background-size:cover;
+    position:relative;
+    top:$boardSize *.165;
+    h1
+      {
+      font-family:$font;
+      font-size:($boardSize *.1)*(667/750);
+      text-align:center;
+      position:relative;
+      top:-108px;
+      }
+    -webkit-transform:rotate(45deg);
+
+  }
 
   .cornerProp
   {
