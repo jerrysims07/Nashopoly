@@ -35,73 +35,227 @@
 
       %section#content
         #board
+          / insert the Chance logo and space
+
+
+          / insert the Community Chest logo and space
+
+          / Draw top row of board & populate
           .horizontalRow
-            #topLeftProp.cornerProp
+            #topLeftProp.cornerProp#go
             .uprightProp
               .regularProperties.purple
+              .propPic#carter
+              .clear
+              .caption The Carter Family
+              .price $60
             .uprightProp
+              .propPic#communityChest
+              .clear
+              .caption COMMUNITY CHEST
             .uprightProp
               .regularProperties.purple
+              .propPic#bailey
+              .clear
+              .caption Deford Bailey
+              .price $80
             .uprightProp
+              %h1 INCOME TAX
+              %h1 ♦
+              %h2 pay 10% or $200
             .uprightProp
+              .propPic#curb
+              .clear
+              .caption Curb Records
+              .price $200
             .uprightProp
               .regularProperties.teal
+              .propPic#acuff
+              .clear
+              .caption Roy Acuff
+              .price $100
             .uprightProp
+              .chancePic.chance
+              .clear
+              .caption CHANCE
             .uprightProp
               .regularProperties.teal
+              .propPic#monroe
+              .clear
+              .caption Bill Monroe
+              .price $100
             .uprightProp
               .regularProperties.teal
-            #topRightProp.cornerProp
+              .propPic#williams
+              .clear
+              .caption Hank Williams
+              .price $120
+            #topRightProp.cornerProp#jail
           .clear
+
+          / draw left column & populate
           .column#leftCol
             .uprightProp
               .regularProperties.lightGreen
+              .propPic#chesney
+              .clear
+              .caption Kenny Chesney
+              .price $300
             .uprightProp
               .regularProperties.lightGreen
+              .propPic#chicks
+              .clear
+              .caption The Dixie Chicks
+              .price $300
             .uprightProp
+              .propPic#communityChest
+              .clear
+              .caption COMMUNITY CHEST
             .uprightProp
               .regularProperties.lightGreen
+              .propPic#cline
+              .clear
+              .caption Tim McGraw
+              .price $320
             .uprightProp
+              .propPic#third
+              .clear
+              .caption Third Man Records
+              .price $200
             .uprightProp
+              .chancePic.chance
+              .clear
+              .caption CHANCE
             .uprightProp
               .regularProperties.blue
+              .propPic#shelton
+              .clear
+              .caption Blake Shelton
+              .price $350
             .uprightProp
+              .propPic#royalties
+              .clear
+              .caption DISTRIBUTE ROYALTIES
+              .price Pay $75
             .uprightProp
               .regularProperties.blue
+              .propPic#swift
+              .clear
+              .caption Taylor Swift
+              .price $400
+
+          / draw right column & populate
           .column#rightCol
             .uprightProp
               .regularProperties.green
+              .propPic#cash
+              .clear
+              .caption Johnny Cash
+              .price $140
             .uprightProp
+              .propPic#ryman
+              .clear
+              .caption The Ryman Auditorium
+              .price $150
             .uprightProp
               .regularProperties.green
+              .propPic#jones
+              .clear
+              .caption George Jones
+              .price $140
             .uprightProp
               .regularProperties.green
+              .propPic#cline
+              .clear
+              .caption Patsy Cline
+              .price $160
             .uprightProp
+              .propPic#capitol
+              .clear
+              .caption Capitol Nashville
+              .price $200
             .uprightProp
               .regularProperties.orange
+              .propPic#parton
+              .clear
+              .caption Dolly Parton
+              .price $180
             .uprightProp
+              .propPic#communityChest
+              .clear
+              .caption COMMUNITY CHEST
             .uprightProp
               .regularProperties.orange
+              .propPic#pride
+              .clear
+              .caption Charley Pride
+              .price $180
             .uprightProp
               .regularProperties.orange
+              .propPic#jennings
+              .clear
+              .caption Waylon Jennings
+              .price $200
+
+          / insert the main logo into the center of the board
+          #centerLogo
+            %h1 nashopoly
+            / %img{src:'../images/nash-skyline-black.png'}
+
+          / draw bottom row & populate
           .horizontalRow.flipped
-            #topLeftProp.cornerProp
+            #topLeftProp.cornerProp#free
             .uprightProp
               .regularProperties.red
+              .propPic#judds
+              .clear
+              .caption The Judds
+              .price $220
             .uprightProp
+              .chancePic.chance
+              .clear
+              .caption CHANCE
             .uprightProp
               .regularProperties.red
-            .uprightProp
-              .regularProperties.red
-            .uprightProp Hello World
-            .uprightProp
-              .regularProperties.yellow
-            .uprightProp
-              .regularProperties.yellow
-            .uprightProp
+              .propPic#alabama
+              .clear
+              .caption Alabama
+              .price $220
             .uprightProp
               .regularProperties.yellow
-            #topRightProp.cornerProp
+              .propPic#strait
+              .clear
+              .caption George Strait
+              .price $240
+            .uprightProp
+              .propPic#atlantic
+              .clear
+              .caption Atlantic Records
+              .price $200
+            .uprightProp
+              .regularProperties.yellow
+              .propPic#jackson
+              .clear
+              .caption Alan Jackson
+              .price $260
+            .uprightProp
+              .regularProperties.yellow
+              .propPic#mcentire
+              .clear
+              .caption Reba McEntire
+              .price $260
+            .uprightProp
+              .propPic#grandoleopry
+              .clear
+              .caption Grand Ole Opry House
+              .price $150
+            .uprightProp
+              .regularProperties.yellow
+              .propPic#brooks
+              .clear
+              .caption Garth Brooks
+              .price $280
+            #topRightProp.cornerProp#goToJail
 
 
     %section#content

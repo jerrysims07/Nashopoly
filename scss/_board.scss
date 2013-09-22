@@ -1,14 +1,16 @@
 // define variablesc
-$boardSize: 500px;
-$borderSize:1px;
+$boardSize: 1000px;
+// $borderSize:1px;
+$borderSize:$boardSize*.001;
 $propWidth: ($boardSize * .08)-($borderSize*2);
 $propHeight: ($boardSize * .14) - ($borderSize*2);
 $propBannerHeight:($propHeight)*.2;
+$pictureSize:$propHeight * .4;
 $leftColRightMove:($boardSize)*.290;
 $leftColTopMove:($boardSize)*.290;
 $rightColRightMove:($boardSize)*-.290;
 $rightColTopMove:($boardSize)*.150;
-$flippedTopMove:($boardSize)*.440;
+$flippedTopMove:($boardSize)*.44;
 
 
 
@@ -36,8 +38,58 @@ $flippedTopMove:($boardSize)*.440;
 {
   @include drawSquare($boardSize, 2px solid black);
   margin:auto;
+  background-color:$boardSpace;
+
+  #go
+  {
+    background-image:url('../images/go.png');
+    background-size:cover;
+    -webkit-transform:rotate(180deg);
+  }
+
+  #jail
+  {
+    background-image:url('../images/jail.png');
+    background-size:cover;
+    -webkit-transform:rotate(270deg);
+  }
+
+  #free
+  {
+    background-image:url('../images/free-parking.png');
+    background-size:cover;
+    // -webkit-transform:rotate(270deg);
+  }
+
+  #goToJail
+  {
+    background-image:url('../images/go-to-jail.png');
+    background-size:cover;
+    -webkit-transform:rotate(90deg);
+  }
 
 
+  #centerLogo
+  {
+    height:($boardSize *.667)*(193/750);
+    width:$boardSize *.667;
+    margin:auto;
+    repeat:none;
+    background-image:url('../images/nash-skyline-black.png');
+    background-size:cover;
+    position:relative;
+    top:$boardSize *.140;
+    h1
+      {
+      font-family:$font;
+      font-size:($boardSize *.1)*(667/750);
+      text-align:center;
+      position:relative;
+      top:-108px;
+      }
+    // -webkit-transform:rotate(45deg);
+
+  }
 
   .cornerProp
   {
@@ -50,54 +102,122 @@ $flippedTopMove:($boardSize)*.440;
     @include drawRect($propWidth, $propHeight, $borderSize solid black);
     border-bottom:2px solid black;
     float:left;
+    -webkit-transform:rotate(180deg);
 
+    h1
+    {
+      font-family:$font;
+      font-size:$propHeight *.1;
+      text-align:center;
+    }
+
+    h2
+    {
+      font-family:$font;
+      font-size:$propHeight *.07;
+      text-align:center;
+      color:black;
+    }
+
+    // attributes shared by all regular purchaseable/mortgageable properties.
     .regularProperties
     {
       @include drawRect($propWidth - 1, $propBannerHeight, 1px solid black);
       border-bottom:2px solid black;
     }
 
-    .purple
-    {
-      background-color:$propertyPurple;
-    }
-
-    .teal
-    {
-      background-color:$propertyTeal;
-    }
-
-    .orange
-    {
-      background-color:$propertyOrange;
-    }
-
-   .red
-    {
-      background-color:$propertyRed;
-    }
-
-   .yellow
-    {
-      background-color:$propertyYellow;
-    }
-
-   .lightGreen
-    {
-      background-color:$propertyLightGreen;
-    }
-
-   .green
-    {
-      background-color:$propertyGreen;
-    }
-
-   .blue
-    {
-      background-color:$propertyBlue;
-    }
-
+    // set all colors for the banners on regular properties
+    .purple{background-color:$propertyPurple;}
+    .teal{background-color:$propertyTeal;}
+    .orange{background-color:$propertyOrange;}
+    .red{background-color:$propertyRed;}
+    .yellow{background-color:$propertyYellow;}
+    .lightGreen{background-color:$propertyLightGreen;}
+    .green{background-color:$propertyGreen;}
+    .blue{background-color:$propertyBlue;}
   }
+
+  .propPic
+  {
+    @include drawSquare($pictureSize, none);
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    left:$nudge;
+    top:$nudge;
+    repeat:no-repeat;
+    background-size:cover;
+  }
+
+  .caption
+  {
+    color:$bgColor;
+    font-size:$propHeight * .05;
+    width:$propWidth;
+    height:$propHeight * .1;
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    // left:$nudge;
+    top:$nudge;
+    font-family:$font;
+    margin-top:$nudge*.6;
+    text-align:center;
+  }
+
+  .chancePic
+  {
+    @include drawRect($pictureSize*.75, ($pictureSize *2.1)*.75, none);
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    left:$nudge *2;
+    top:$nudge;
+    background-size:cover;
+  }
+
+  .price
+  {
+    width:$propWidth;
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    margin:auto;
+    text-align:center;
+
+    // left:$nudge;
+    top:$nudge;
+  }
+
+  // set the images for properties.
+  #carter{background-image:url('../images/carter.png');}
+  #chicks{background-image:url('../images/chicks.png');}
+  #brooks{background-image:url('../images/brooks.png');}
+  #mcentire{background-image:url('../images/mcentire.png');}
+  #jackson{background-image:url('../images/jackson.png');}
+  #strait{background-image:url('../images/strait.png');}
+  #alabama{background-image:url('../images/alabama.png');}
+  #judds{background-image:url('../images/judd.png');}
+  #chesney{background-image:url('../images/chesney.png');}
+  #mcgraw{background-image:url('../images/mcgraw.png');}
+  #shelton{background-image:url('../images/shelton.png');}
+  #swift{background-image:url('../images/swift.png');}
+  #bailey{background-image:url('../images/bailey.png');}
+  #acuff{background-image:url('../images/acuff.png');}
+  #bailey{background-image:url('../images/bailey.png');}
+  #monroe{background-image:url('../images/monroe.png');}
+  #williams{background-image:url('../images/williams.png');}
+  #cash{background-image:url('../images/cash.png');}
+  #jones{background-image:url('../images/jones.png');}
+  #cline{background-image:url('../images/cline.png');}
+  #parton{background-image:url('../images/parton.png');}
+  #pride{background-image:url('../images/pride.png');}
+  #jennings{background-image:url('../images/jennings.png');}
+  #atlantic{background-image:url('../images/atlantic.png');}
+  #curb{background-image:url('../images/curb.png');}
+  #capitol{background-image:url('../images/capitol.png');}
+  #third{background-image:url('../images/third.jpg');}
+  #ryman{background-image:url('../images/ryman.png');}
+  #grandoleopry{background-image:url('../images/grandoleopry.png');}
+  .chance{background-image:url('../images/chance.jpg')}
+  #communityChest{background-image:url('../images/communityChest.jpg')}
+  #royalties{background-image:url('../images/notes.png')}
 
   .rotateRight
   {
