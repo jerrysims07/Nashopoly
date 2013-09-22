@@ -40,6 +40,35 @@ $flippedTopMove:($boardSize)*.44;
   margin:auto;
   background-color:$boardSpace;
 
+  #go
+  {
+    background-image:url('../images/go.png');
+    background-size:cover;
+    -webkit-transform:rotate(180deg);
+  }
+
+  #jail
+  {
+    background-image:url('../images/jail.png');
+    background-size:cover;
+    -webkit-transform:rotate(270deg);
+  }
+
+  #free
+  {
+    background-image:url('../images/free-parking.png');
+    background-size:cover;
+    // -webkit-transform:rotate(270deg);
+  }
+
+  #goToJail
+  {
+    background-image:url('../images/go-to-jail.png');
+    background-size:cover;
+    -webkit-transform:rotate(90deg);
+  }
+
+
   #centerLogo
   {
     height:($boardSize *.667)*(193/750);
@@ -49,7 +78,7 @@ $flippedTopMove:($boardSize)*.44;
     background-image:url('../images/nash-skyline-black.png');
     background-size:cover;
     position:relative;
-    top:$boardSize *.165;
+    top:$boardSize *.140;
     h1
       {
       font-family:$font;
@@ -58,7 +87,7 @@ $flippedTopMove:($boardSize)*.44;
       position:relative;
       top:-108px;
       }
-    -webkit-transform:rotate(45deg);
+    // -webkit-transform:rotate(45deg);
 
   }
 
@@ -75,6 +104,20 @@ $flippedTopMove:($boardSize)*.44;
     float:left;
     -webkit-transform:rotate(180deg);
 
+    h1
+    {
+      font-family:$font;
+      font-size:$propHeight *.1;
+      text-align:center;
+    }
+
+    h2
+    {
+      font-family:$font;
+      font-size:$propHeight *.07;
+      text-align:center;
+      color:black;
+    }
 
     // attributes shared by all regular purchaseable/mortgageable properties.
     .regularProperties
@@ -120,6 +163,16 @@ $flippedTopMove:($boardSize)*.44;
     text-align:center;
   }
 
+  .chancePic
+  {
+    @include drawRect($pictureSize*.75, ($pictureSize *2.1)*.75, none);
+    position:relative;
+    $nudge:($propWidth - $pictureSize) / 2;
+    left:$nudge *2;
+    top:$nudge;
+    background-size:cover;
+  }
+
   .price
   {
     width:$propWidth;
@@ -156,7 +209,15 @@ $flippedTopMove:($boardSize)*.44;
   #parton{background-image:url('../images/parton.png');}
   #pride{background-image:url('../images/pride.png');}
   #jennings{background-image:url('../images/jennings.png');}
-
+  #atlantic{background-image:url('../images/atlantic.png');}
+  #curb{background-image:url('../images/curb.png');}
+  #capitol{background-image:url('../images/capitol.png');}
+  #third{background-image:url('../images/third.jpg');}
+  #ryman{background-image:url('../images/ryman.png');}
+  #grandoleopry{background-image:url('../images/grandoleopry.png');}
+  .chance{background-image:url('../images/chance.jpg')}
+  #communityChest{background-image:url('../images/communityChest.jpg')}
+  #royalties{background-image:url('../images/notes.png')}
 
   .rotateRight
   {
