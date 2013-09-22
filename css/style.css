@@ -428,7 +428,7 @@ h2 {
 .chanceCard {
   width: 200px;
   height: 300px;
-  background: #f5f6f7 url("../images/chance.png") no-repeat;
+  background: #faaa19;
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
@@ -445,7 +445,7 @@ h2 {
 .chanceCard1 {
   width: 200px;
   height: 300px;
-  background: #f5f6f7 url("../images/chance.png") no-repeat;
+  background: #faaa19;
   margin: auto;
   margin-top: 0px;
   border-radius: 15px;
@@ -462,7 +462,7 @@ h2 {
 .communityCard {
   width: 200px;
   height: 300px;
-  background: #f5f6f7 url("../images/communityChest.png") no-repeat;
+  background: #39c1cb;
   margin: auto;
   margin-top: 25px;
   left: 57px;
@@ -480,7 +480,7 @@ h2 {
 .communityCard1 {
   width: 200px;
   height: 300px;
-  background: #f5f6f7;
+  background: #39c1cb;
   background-size: 100%;
   margin: auto;
   margin-top: 0px;
