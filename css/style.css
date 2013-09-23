@@ -423,7 +423,14 @@ h2 {
   background-color: #f5f6f7;
   margin: auto;
   margin-top: 25px;
-  border-radius: 15px; }
+  border-radius: 15px;
+  position: relative; }
+  .cards img {
+    width: 100px;
+    margin: auto;
+    position: absolute;
+    top: 150px;
+    left: 50px; }
 
 .chanceCard {
   width: 200px;
