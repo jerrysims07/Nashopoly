@@ -95,3 +95,54 @@ h2
   font-weight: 400;
   line-height: 24px;
 }
+
+#contactContent
+{
+  text-align:center;
+  font-size:20px;
+  font-weight:500;
+  margin-top:-75px;
+}
+
+#contactList
+{
+  margin:auto;
+text-align:center;
+
+  // p
+  // {
+  //   font-size:14px;
+  //   font-weight:bold;
+  // }
+
+  li
+  {
+    display:inline-block;
+    padding-right:42px;
+    padding-left:42px;
+    border-right:1px solid gray;
+  }
+
+  li:last-child
+  {
+    margin-right:0px;
+    border-right:none;
+  }
+}
+
+#contactMap
+{
+  margin:auto;
+  text-align:center;
+  padding-top:35px;
+//   iframe
+//   {
+//     width:425px;
+//     height:350px;
+//     frameborder:0px;
+//     scrolling:no;
+// //     src: "https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=315+10th+Ave+N,+Nashville,+TN&amp;aq=0&amp;oq=315+10&amp;sll=36.18664,-86.785245&amp;sspn=1.00862,2.024231&amp;t=h&amp;ie=UTF8&amp;hq=&amp;hnear=315+10th+Ave+N,+Nashville,+Tennessee+37203&amp;z=14&amp;iwloc=A&amp;output=embed";
+// //     // margin:auto;
+// //         // src:url("https://maps.google.com/?ie=UTF8&amp;ll=36.16208,-86.787207&amp;spn=0.004981,0.006899&amp;t=m&amp;z=17&amp);
+//   }
+}
