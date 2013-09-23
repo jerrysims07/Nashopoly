@@ -97,7 +97,7 @@ footer {
   border: 2px solid black;
   border-image-repeat: none;
   margin: auto;
-  background-color: #f5f6f7; }
+  background-color: white; }
   #board #go {
     background-image: url("../images/go.png");
     background-size: cover;
@@ -128,12 +128,20 @@ footer {
       text-align: center;
       position: relative;
       top: -108px; }
+  #board .cornerProp.hover {
+    -webkit-transform: scale(1.1); }
   #board .cornerProp {
     width: 138px;
     height: 138px;
     border: 1px solid black;
     border-image-repeat: none;
     float: left; }
+  #board .uprightProp {
+    -webkit-transition: all .27s ease-in-out; }
+  #board .uprightProp:hover {
+    -webkit-transform: rotate(180deg);
+    -webkit-transform: scale(1.1);
+    opacity: 1; }
   #board .uprightProp {
     width: 78px;
     height: 138px;
@@ -145,6 +153,8 @@ footer {
       font-family: "Source Sans Pro", sans-serif;
       font-size: 13.8px;
       text-align: center; }
+    #board .uprightProp h1:first-child {
+      padding-top: 25px; }
     #board .uprightProp h2 {
       font-family: "Source Sans Pro", sans-serif;
       font-size: 9.66px;
@@ -265,7 +275,7 @@ footer {
     background-image: url("../images/grandoleopry.png"); }
   #board .chance {
     background-image: url("../images/chance.jpg"); }
-  #board #communityChest {
+  #board .communityChest {
     background-image: url("../images/communityChest.jpg"); }
   #board #royalties {
     background-image: url("../images/notes.png"); }
@@ -313,7 +323,7 @@ footer {
     margin-top: 20px;
     float: left;
     width: 350px;
-    background: #f5f6f7;
+    background: white;
     border-radius: 15px; }
     #piecewrap #sidenav ul {
       list-style: none;
@@ -420,7 +430,7 @@ h2 {
 .cards {
   width: 200px;
   height: 300px;
-  background-color: #f5f6f7;
+  background-color: white;
   margin: auto;
   margin-top: 25px;
   border-radius: 15px;
@@ -510,7 +520,30 @@ h2 {
   margin: 0 auto;
   text-align: center;
   font-weight: 400;
-  line-height: 24px;
+  line-height: 24px; }
+
+#contactContent {
+  text-align: center;
+  font-size: 20px;
+  font-weight: 500;
+  margin-top: -75px; }
+
+#contactList {
+  margin: auto;
+  text-align: center; }
+  #contactList li {
+    display: inline-block;
+    padding-right: 42px;
+    padding-left: 42px;
+    border-right: 1px solid gray; }
+  #contactList li:last-child {
+    margin-right: 0px;
+    border-right: none; }
+
+#contactMap {
+  margin: auto;
+  text-align: center;
+  padding-top: 35px;
   padding-top: 15px; }
 
 .faq {

@@ -45,6 +45,8 @@ $flippedTopMove:($boardSize)*.44;
     background-image:url('../images/go.png');
     background-size:cover;
     -webkit-transform:rotate(180deg);
+    // &:hover
+    // {-webkit-transform:scale(1.1);}
   }
 
   #jail
@@ -91,10 +93,28 @@ $flippedTopMove:($boardSize)*.44;
 
   }
 
-  .cornerProp
+
+  // .cornerProp{-webkit-transition: all .27s ease-in-out;}
+  .cornerProp.hover
+  {
+        -webkit-transform:scale(1.1);
+
+  }
+    .cornerProp
   {
     @include drawSquare($propHeight, $borderSize solid black);
     float:left
+  }
+
+
+  // properties effect for hover
+  .uprightProp{-webkit-transition: all .27s ease-in-out;}
+  .uprightProp:hover
+  {
+    // border:$borderSize solid propertyRed;
+    -webkit-transform:rotate(180deg);
+    -webkit-transform:scale(1.1);
+    opacity:1;
   }
 
   .uprightProp
@@ -109,6 +129,11 @@ $flippedTopMove:($boardSize)*.44;
       font-family:$font;
       font-size:$propHeight *.1;
       text-align:center;
+    }
+
+    h1:first-child
+    {
+      padding-top:25px;
     }
 
     h2
@@ -185,6 +210,17 @@ $flippedTopMove:($boardSize)*.44;
     top:$nudge;
   }
 
+  // .communityChest
+  // {
+  //   position:relative;
+  //   top:$propHeight *.22;
+  //   // .caption
+  //   // {
+  //   //   position:relative;
+  //   //   margin-top:$propHeight *.45;
+  //   // }
+  // }
+
   // set the images for properties.
   #carter{background-image:url('../images/carter.png');}
   #chicks{background-image:url('../images/chicks.png');}
@@ -216,7 +252,7 @@ $flippedTopMove:($boardSize)*.44;
   #ryman{background-image:url('../images/ryman.png');}
   #grandoleopry{background-image:url('../images/grandoleopry.png');}
   .chance{background-image:url('../images/chance.jpg')}
-  #communityChest{background-image:url('../images/communityChest.jpg')}
+  .communityChest{background-image:url('../images/communityChest.jpg')}
   #royalties{background-image:url('../images/notes.png')}
 
   .rotateRight
