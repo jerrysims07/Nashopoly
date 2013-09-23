@@ -139,7 +139,9 @@ footer {
   #board .uprightProp {
     -webkit-transition: all .27s ease-in-out; }
   #board .uprightProp:hover {
-    -webkit-transform: scale(1.1); }
+    -webkit-transform: rotate(180deg);
+    -webkit-transform: scale(1.1);
+    opacity: 1; }
   #board .uprightProp {
     width: 78px;
     height: 138px;

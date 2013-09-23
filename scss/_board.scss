@@ -45,7 +45,7 @@ $flippedTopMove:($boardSize)*.44;
     background-image:url('../images/go.png');
     background-size:cover;
     -webkit-transform:rotate(180deg);
-    // :hover
+    // &:hover
     // {-webkit-transform:scale(1.1);}
   }
 
@@ -112,8 +112,9 @@ $flippedTopMove:($boardSize)*.44;
   .uprightProp:hover
   {
     // border:$borderSize solid propertyRed;
-    // -webkit-transform:rotate(180deg);
+    -webkit-transform:rotate(180deg);
     -webkit-transform:scale(1.1);
+    opacity:1;
   }
 
   .uprightProp
