@@ -45,6 +45,8 @@ $flippedTopMove:($boardSize)*.44;
     background-image:url('../images/go.png');
     background-size:cover;
     -webkit-transform:rotate(180deg);
+    // :hover
+    // {-webkit-transform:scale(1.1);}
   }
 
   #jail
@@ -92,7 +94,7 @@ $flippedTopMove:($boardSize)*.44;
   }
 
 
-  .cornerProp{-webkit-transition: all .27s ease-in-out;}
+  // .cornerProp{-webkit-transition: all .27s ease-in-out;}
   .cornerProp.hover
   {
         -webkit-transform:scale(1.1);

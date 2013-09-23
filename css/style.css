@@ -128,8 +128,6 @@ footer {
       text-align: center;
       position: relative;
       top: -108px; }
-  #board .cornerProp {
-    -webkit-transition: all .27s ease-in-out; }
   #board .cornerProp.hover {
     -webkit-transform: scale(1.1); }
   #board .cornerProp {
